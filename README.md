@@ -110,7 +110,8 @@ GitHub Copilot autocomplete was used in Visual Studio Code to assist with drafti
 | test_scalene_triangle | Yes | Kept | Copilot correctly tested a valid triangle with three different side lengths. |
 | test_right_scalene_triangle | Yes | Kept | Copilot correctly tested the 3-4-5 right triangle and suggested testing different side orders. |
 | test_right_triangle_non_integer | Yes | Kept | Copilot correctly suggested a square
-Copilot Suggestion Review
+
+### Copilot Suggestion Review
 
 One issue identified in the generated code was the placeholder module import:
 
@@ -126,7 +127,7 @@ Copilot also suggested additional large-number tests. These were reviewed but no
 
 For floating-point testing, Copilot correctly suggested using math.sqrt(2) rather than relying on hard-coded approximate values. The implementation uses math.isclose() to detect right triangles with floating-point side lengths.
 
-Acceptance Criteria
+### Acceptance Criteria
 
 The customer is a stained-glass studio that needs to determine whether glass pieces can be constructed from three side lengths and whether a right-angle piece requires reinforced corners.
 
@@ -158,14 +159,14 @@ The acceptance test passed when executed using pytest.
 
 
 
-Tools Used
+### Tools Used
 
 GitHub Copilot autocomplete was used in Visual Studio Code to assist with drafting unit tests. ChatGPT was used for implementation guidance, test development, documentation, and troubleshooting.
 
 All generated code was reviewed against the assignment requirements, and the final test suite was verified using pytest.
 
 
-Verification and Review
+### Verification and Review
 
 Copilot suggestions were compared against the triangle classification requirements. The final test suite was executed using pytest, with all 10 unit tests and 1 acceptance test passing.
 
